@@ -26,6 +26,23 @@ synchronized等待时，是不占用CPU时间的，是进入wait对列中的。
 
 
 
+### 间歇性复习
+
+1. synchronized
+2. volatile
+3. atomicXXX -> CAS
+4. increment -> sync atomicXXX LongAdder
+
+
+
+
+
+### ReentrantLock
+
+可重入锁
+
+
+
 
 
 
