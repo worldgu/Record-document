@@ -5,11 +5,11 @@
 ## 6
 
 1. **设计模式**
-2. JVM调优            --->Looking
-3. Redis                  --->  Look
+2. JVM调优              --->Look
+3. Redis                   --->  Look
 4. 多线程高并发     --->  Look
-5. ZOOKEEPER      ---> Look
-6. MYSQL调优
+5. ZOOKEEPER       ---> Look
+6. MYSQL调优        --->Looking
 
 ### 2
 
