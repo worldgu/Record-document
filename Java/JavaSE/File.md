@@ -24,6 +24,18 @@ LinkedHashMap是一种有序的HashMap，查询速度快，便于进行添加删
 
 
 
+<font color="red">如果没有为类中的某些成员赋初始值，Java会为类成员赋予固定的初始值，如数值变量的值为0，布尔变量的值为true，未初始化的引用为null。</font>
+
+
+
+<font color="red">红色代表错误</font>
+
+
+
+Dictionary建立了关键字和值的映射，只要提供一个关键字，Dictionary就会返回一个相应的值
+
+
+
 ***\*方法重载和方法重写（覆盖）的区别。\****
 
 |      | 英文     | 位置不同     | 修饰符   | 返回值   | 方法名 | 参数 | 抛出异常 | 方法体 |
@@ -52,3 +64,12 @@ LinkedHashMap是一种有序的HashMap，查询速度快，便于进行添加删
 8) public final native void notify() 多线程中唤醒功能
 
 9) public final native void notifyAll() 多线程中唤醒所有等待线程的功能
+
+
+
+
+
+重载和覆盖
+
+override  overload
+
