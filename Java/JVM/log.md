@@ -156,6 +156,8 @@
 
    ![image-20200518164316673](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\硬件速度的具体值.png)
 
+   ![image-20200618000755255](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\image-20200618000755255.png)
+
    ## 硬件层数据一致性
 
    ![image-20200518164546036](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\cache line.png)
@@ -195,9 +197,9 @@
    
 
    ![image-20200518222315397](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\证明指令时乱序执行的.png)
-
+   
    ```
-   乱序执行的证明：JVM/jmm/Disorder.java
+乱序执行的证明：JVM/jmm/Disorder.java
    ```
 
    ### 如何保证特定情况下不乱序
@@ -207,7 +209,7 @@
    volatitle 
 
    ![image-20200518223212901](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\cpu内存屏障)
-
+   
    
 
 
