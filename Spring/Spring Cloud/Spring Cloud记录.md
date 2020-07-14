@@ -114,7 +114,7 @@ Jfinal  詹波
 
 
 
-## Spring Cloud 全家桶 Hoxton SR3 (六)
+## Spring Cloud 全家桶 Hoxton SR3 (七)
 
 > 本节课目标
 >
@@ -141,4 +141,70 @@ Http无法实现长轮询，因为超时时间无法控制。
 Hystrix线程池隔离:  官方推荐，Hystrix的线程池是异步的，可以处理更多的请求
 
 Hystrix信号量隔离:  Hystrix的信号量走的是tomcat的work线程池隔离
+
+
+
+一个请求多次请求返回不了数据进行**熔断** ，然后**降级**返回**兜底数据**，在熔断和降级前进行**隔离**
+
+线程池内部:  服务异常隔离，代码健壮，不可能出问题的情况下计算速度飞快。
+
+
+
+信号量使用的是Tomcat的work线程无法进行隔离，信号量中的线程出现异常后，work线程也会出现异常。
+
+线程池使用的是Tomcat的work线程的一部分，将work中的一部分线程拿了出来，建立连接，线程池的线程出现异常后，不影响work线程
+
+线程池是为了控制IO阻塞，worker100个线程，远程只能用10个，剩下的90多个线程给别的使用了。
+
+
+
+Tomcat总的worker线程分为两个部分:
+
+远程调用服务的线程；
+
+本地运行服务的线程；
+
+jsonp  跨域请求
+
+
+
+Feign 整合Hystrix，RestTemplate整合Hystrix,Hystrix信号量与线程池隔离，Hystrix的Dashboard服务监控
+
+## Spring Cloud 全家桶 Hoxton SR3 (八)
+
+> 网关:  Zuul，  gateway
+>
+> 链路追踪
+>
+> Openresty
+
+Zuul与nginx的区别
+
+路由是一个功能，反向代理是一种模式
+
+基于隧道模式的网关  叫做业务网关  Zuul、Nginx,kong
+
+
+
+隧道模式与路由模式(DR)
+
+隧道模式请求方与服务方必须通过该网关
+
+路由模式不接入请求调用方与服务方任何事
+
+**所有拒绝策略，尽可能的前置**
+
+
+
+链路追踪
+
+Sleuth单独
+
+zipkin(需要Sleuth将信息上报到zipkin上面)，
+
+zipkin的客户端在zipkin的官网上面现在一个jar(大概50多M)进行启动
+
+Skywalking
+
+链路追踪   zipkin    ArchSummit
 
