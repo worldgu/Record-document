@@ -208,3 +208,32 @@ Skywalking
 
 链路追踪   zipkin    ArchSummit
 
+## Spring Cloud 全家桶 Hoxton SR3 (九)
+
+> 什么是配置中心及应用场景
+>
+> SpringCloud Config + GitHub单机搭建
+>
+> SpringCloud Config 配置命名规则
+>
+> SpringCloud Config + GitHub 分支读取
+>
+> 微服务整合 SpringCloud Config 加载远程配置
+>
+> SpringCloud Config微服务手动刷新与自动刷新配置
+>
+> 第一阶段课程总结
+
+nacos
+
+apollo
+
+Rabbit面向与应用的开发
+
+KafKa面向与大的问题，类似于数据中转开发
+
+
+
+Spring Cloud Bus 的底层实现是MQ(消息中间件)
+
+MQ需要支持amqp协议才能使用，统一化的接口标准，Rabbit与Kafka都是支持的。
