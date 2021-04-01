@@ -31,7 +31,7 @@
 
    
 
-   ![image-20200425225257887](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\access_flags.png)
+   ![image-20200425225257887](.\Image\access_flags.png)
 
    
 
@@ -50,7 +50,7 @@
 
    JAVA的汇编
 
-   ![image-20200426202816638](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\JVM13中第7章.png)
+   ![image-20200426202816638](.\Image\JVM13中第7章.png)
 
    
 
@@ -66,7 +66,7 @@
 
    JVM只有八个指令是原子性的
 
-   ![image-20200426212314145](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\八大原子操作.png)
+   ![image-20200426212314145](.\Image\八大原子操作.png)
 
    long  和 Double在多线程的时候，鼓励程序员是生成64位的
 
@@ -76,7 +76,7 @@
 
    现在的实现是 MESI(CPU缓存一致性协议)
 
-   ![image-20200426212920169](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\read_writer_volatile_atomic.png)
+   ![image-20200426212920169](.\Image\read_writer_volatile_atomic.png)
 
    
 
@@ -118,7 +118,7 @@
       - 马老师猜测是放在 metaSpace中
    2. ClassLoader 中的parent什么时候进行赋值的
    3. 问题图片:
-      1. ![image-20200427230343022](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\问题.png)
+      1. ![image-20200427230343022](.\Image\问题.png)
 
    
 
@@ -150,17 +150,17 @@
 
    #### 硬件层的并发优化基础知识
 
-   ![image-20200518163952123](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\存储器的层次结构.png)
+   ![image-20200518163952123](.\Image\存储器的层次结构.png)
 
    
 
-   ![image-20200518164316673](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\硬件速度的具体值.png)
+   ![image-20200518164316673](.\Image\硬件速度的具体值.png)
 
-   ![image-20200618000755255](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\image-20200618000755255.png)
+   ![image-20200618000755255](.\Image\image-20200618000755255.png)
 
    ## 硬件层数据一致性
 
-   ![image-20200518164546036](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\cache line.png)
+   ![image-20200518164546036](.\Image\cache line.png)
 
    多线程是内存中的x,y可能会被缓存在不同的内存中，交由不同的计算单元与寄存器进行处理，可能每个计算单元与寄存器对应着一个线程，也可能超线程。
 
@@ -168,7 +168,7 @@
 
    #### 对L3 Cache进行加锁，L2通过总线锁的状态进行判断处理，但是处理效率会降低。
 
-   ![image-20200518164855508](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\总线锁锁住总线.png)
+   ![image-20200518164855508](.\Image\总线锁锁住总线.png)
 
    
 
@@ -176,7 +176,7 @@
 
    像 MSI、MESI、MOSI、Synapse、Firefly、Dragon这些都是数据一致性协议
 
-   ![image-20200518165230891](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\数据一致性协议.png)
+   ![image-20200518165230891](.\Image\数据一致性协议.png)
 
    现在的CPU数据一致性是通过，缓存锁(MESI....)  +  总线锁一起来实现的。
 
@@ -184,19 +184,19 @@
 
    **Cache Line** 缓存行对齐的实际应用。
 
-   ![image-20200518172227982](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\缓存行对齐的实际应用.png)
+   ![image-20200518172227982](.\Image\缓存行对齐的实际应用.png)
 
    ## 乱序问题
 
-   ![image-20200518215644165](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\乱序问题_1.png)
+   ![image-20200518215644165](.\Image\乱序问题_1.png)
 
-   ![image-20200518221147558](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\乱序问题_2.png)
+   ![image-20200518221147558](.\Image\乱序问题_2.png)
 
-   ![image-20200518221535257](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\cpu的合并写技术.png)
+   ![image-20200518221535257](.\Image\cpu的合并写技术.png)
 
    
 
-   ![image-20200518222315397](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\证明指令时乱序执行的.png)
+   ![image-20200518222315397](.\Image\证明指令时乱序执行的.png)
    
    ```
 乱序执行的证明：JVM/jmm/Disorder.java
@@ -208,7 +208,7 @@
 
    volatitle 
 
-   ![image-20200518223212901](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\cpu内存屏障)
+   ![image-20200518223212901](.\Image\cpu内存屏障)
    
    
 
@@ -290,29 +290,29 @@
 
    一下描述在java8种已经放弃
 
-   ![image-20200519160120170](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\8大原子操作.png)
+   ![image-20200519160120170](.\Image\8大原子操作.png)
 
    JAVA并发内存模式是没有变化的
 
-   ![image-20200519160241397](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\java并发内存模型.png)
+   ![image-20200519160241397](.\Image\java并发内存模型.png)
 
    
 
-   ![image-20200519160719957](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\JVM规定重排序必须遵守的规则.png)
+   ![image-20200519160719957](.\Image\JVM规定重排序必须遵守的规则.png)
 
-   ![image-20200519160853203](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\as is serial.png)
+   ![image-20200519160853203](.\Image\as is serial.png)
 
    
 
    ### 对象的内存布局
 
-   ![image-20200519154850909](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\对象的内存布局面试题.png)
+   ![image-20200519154850909](.\Image\对象的内存布局面试题.png)
 
    
 
    ### 1. 对象的创建过程
 
-   ![image-20200519161753688](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\对象的创建过程.png)
+   ![image-20200519161753688](.\Image\对象的创建过程.png)
 
    
 
@@ -423,13 +423,13 @@
 
    ### 3. 对象头具体包括什么
 
-   ![image-20200519172456258](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Hotspotd的源码.md)
+   ![image-20200519172456258](.\Image\Hotspotd的源码.md)
 
    
 
    #### 具体的分配
 
-   ![image-20200519172652897](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\对象头大小的具体分配.png)
+   ![image-20200519172652897](.\Image\对象头大小的具体分配.png)
 
    
 
@@ -451,11 +451,11 @@
 
    
 
-   ![image-20200519172813042](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\oindentity hash code的计算后的影响.png)
+   ![image-20200519172813042](.\Image\oindentity hash code的计算后的影响.png)
 
    
 
-   ![image-20200519172917553](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\完整说明.png)
+   ![image-20200519172917553](.\Image\完整说明.png)
 
    
 
@@ -473,7 +473,7 @@
 
    -  GC相关内容  后面会讲
 
-   ![image-20200519173834952](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\对象的内存分配.png)
+   ![image-20200519173834952](.\Image\对象的内存分配.png)
 
    
 
@@ -487,23 +487,23 @@
 
    
 
-   ![image-20200519193449482](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\从一道面试题开始谈.png)
+   ![image-20200519193449482](.\Image\从一道面试题开始谈.png)
 
-   ![image-20200519220215473](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\查看JVM执行.png)
+   ![image-20200519220215473](.\Image\查看JVM执行.png)
 
    ### 补充
 
-   ![image-20200520095319971](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\补充.png)
+   ![image-20200520095319971](.\Image\补充.png)
 
    run engine之后的内容
 
-   ![image-20200519193739038](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\run engine之后eun-time data area.png)
+   ![image-20200519193739038](.\Image\run engine之后eun-time data area.png)
 
    
 
    Data areas的区域划分
 
-   ![image-20200519194736231](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Run-time data areas.png)
+   ![image-20200519194736231](.\Image\Run-time data areas.png)
 
 
    ## Runtime Data Area
@@ -526,11 +526,11 @@
 
    JVM中每一个线程有他自己的程序计数器。
 
-   ![image-20200519195031768](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Program Counter.png)
+   ![image-20200519195031768](.\Image\Program Counter.png)
 
    **JVM Stack**
 
-   ![image-20200519195213475](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\JVM Stacks.png)
+   ![image-20200519195213475](.\Image\JVM Stacks.png)
 
    1. Frame - 每个方法对应一个栈帧
       1. Local Variable Table   (局部变量表)
@@ -547,13 +547,13 @@
 
    JVM线程中间共享
 
-   ![image-20200519195351404](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\JVM Heap.png)
+   ![image-20200519195351404](.\Image\JVM Heap.png)
 
    **Method Area**
 
    方法区被所有的线程所共享
 
-   ![image-20200519195614169](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Method Area.png)
+   ![image-20200519195614169](.\Image\Method Area.png)
 
    1. Perm Space (<1.8)  （永久区）
       字符串常量位于PermSpace
@@ -566,7 +566,7 @@
 
    Runtime Constant Pool
 
-   ![image-20200519200455855](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Run-Time Constant Pool.png)
+   ![image-20200519200455855](.\Image\Run-Time Constant Pool.png)
 
    Native Method Stack
 
@@ -576,41 +576,41 @@
    >
    > NIO ， 提高效率，实现zero copy
 
-   ![image-20200519201350329](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\next 线程共享区域.png)
+   ![image-20200519201350329](.\Image\next 线程共享区域.png)
 
    进入正题:
 
-   ![image-20200519202121449](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\栈帧Frame.png)
+   ![image-20200519202121449](.\Image\栈帧Frame.png)
 
    小结回顾:
 
    每个方法对应一个栈帧.
 
-   ![image-20200520101318877](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\小节回顾.png)
+   ![image-20200520101318877](.\Image\小节回顾.png)
 
    
 
    
 
-   ![image-20200520101540265](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\示例-1.png)
+   ![image-20200520101540265](.\Image\示例-1.png)
 
    
 
    int代表的最大数为正127,所以对应的虚拟机指令为 sipush进行压栈,  s-->short
 
-   ![image-20200520101715476](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\示例-2.png)
+   ![image-20200520101715476](.\Image\示例-2.png)
 
    
 
    非static的方法是需要对象的，这个对象已经被放在了局部变量表里面。
 
-   ![image-20200520102059125](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\示例-3.png)
+   ![image-20200520102059125](.\Image\示例-3.png)
 
    
 
-   ![image-20200520102411712](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\示例-4.png)
+   ![image-20200520102411712](.\Image\示例-4.png)
 
-   ![image-20200520102807396](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\示例-5.png)
+   ![image-20200520102807396](.\Image\示例-5.png)
 
    
 
@@ -624,13 +624,13 @@
    >
    > 方法区溢出
 
-   ![image-20200520103448772](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\示例-6.png)
+   ![image-20200520103448772](.\Image\示例-6.png)
 
    
 
    **这里讲的有点懵逼**
 
-   ![image-20200520104721943](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\frames of recursion.png)
+   ![image-20200520104721943](.\Image\frames of recursion.png)
 
    
 
@@ -638,7 +638,7 @@
 
    clinit: 静态语句块；
 
-   ![image-20200520104821920](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\前面总结.png)
+   ![image-20200520104821920](.\Image\前面总结.png)
 
    
 
@@ -706,7 +706,7 @@
 
    **java和C++ GC回收的区别:**
 
-   ![image-20200520153707084](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\javaVSC++.png)
+   ![image-20200520153707084](.\Image\javaVSC++.png)
 
    
 
@@ -718,25 +718,25 @@
 
    引用计数：
 
-   ![image-20200520153906472](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\引用计数的方法.png)
+   ![image-20200520153906472](.\Image\引用计数的方法.png)
 
    引用计数不能解决的情况:
 
    互相引用：  A、B、C之间互相引用。
 
-   ![image-20200520154153636](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\引用计数的互相引用.png)
+   ![image-20200520154153636](.\Image\引用计数的互相引用.png)
 
    
 
    根可达算法:
 
-   ![image-20200520154316408](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\根可达算法.png)
+   ![image-20200520154316408](.\Image\根可达算法.png)
 
    
 
    哪些是跟对象:
 
-   ![image-20200520154512434](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\根对象的范围.png)
+   ![image-20200520154512434](.\Image\根对象的范围.png)
 
    
 
@@ -752,21 +752,21 @@
 
    ## Mark-Sweep
 
-   ![image-20200520155424540](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\标记清除.png)
+   ![image-20200520155424540](.\Image\标记清除.png)
 
    
 
-   ![image-20200520155341136](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\标记清除的详细说明.png)
+   ![image-20200520155341136](.\Image\标记清除的详细说明.png)
 
    > 伊甸区的存活对象比较少，所以标记清除算法不适合伊甸区。
 
    ## Copying
 
-   ![image-20200520155833957](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Copying算法.png)
+   ![image-20200520155833957](.\Image\Copying算法.png)
 
    
 
-   ![image-20200520160344615](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Copy算法详解.png)
+   ![image-20200520160344615](.\Image\Copy算法详解.png)
 
    
 
@@ -774,11 +774,11 @@
 
    ## Mark-Compact
 
-   ![image-20200520160503285](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\标记压缩算法.png)
+   ![image-20200520160503285](.\Image\标记压缩算法.png)
 
    
 
-   ![image-20200520160610852](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\标记压缩算法详解.png)
+   ![image-20200520160610852](.\Image\标记压缩算法详解.png)
 
    
 
@@ -823,7 +823,7 @@
 
    6. 对象分配过程图
 
-   ![image-20200520161717401](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\对象分配过程详解.png)
+   ![image-20200520161717401](.\Image\对象分配过程详解.png)
 
    7. 动态年龄：（不重要）
       https://www.jianshu.com/p/989d3b06a49d
@@ -834,25 +834,25 @@
 
    
 
-   ![image-20200520172542039](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\堆内存逻辑分区.png)
+   ![image-20200520172542039](.\Image\堆内存逻辑分区.png)
 
    
 
    一个对象从出生到消亡
 
-   ![image-20200520162346086](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\一个对象从出生到消亡.png)
+   ![image-20200520162346086](.\Image\一个对象从出生到消亡.png)
 
    
 
    GC概念
 
-   ![image-20200520162535951](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\GC概念.png)
+   ![image-20200520162535951](.\Image\GC概念.png)
 
    
 
    ### 详解
 
-   ![image-20200520163206401](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\详解.png)
+   ![image-20200520163206401](.\Image\详解.png)
 
    
 
@@ -896,19 +896,19 @@
 
    #### YGC FGC
 
-   ![image-20200520164226975](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\YGC FGC.png)
+   ![image-20200520164226975](.\Image\YGC FGC.png)
 
    
 
    对象何时进入老年代
 
-   ![image-20200520164355441](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\对象何时进入老年代.png)
+   ![image-20200520164355441](.\Image\对象何时进入老年代.png)
 
    
 
    总结
 
-   ![image-20200520161717401](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\对象分配过程详解.png)
+   ![image-20200520161717401](.\Image\对象分配过程详解.png)
 
    
 
@@ -918,34 +918,34 @@
 
    # 常见的垃圾回收器
 
-   ![image-20200523100959417](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Garbage Collectors.png)
+   ![image-20200523100959417](.\Image\Garbage Collectors.png)
 
    1. JDK诞生 Serial追随 提高效率，诞生了PS，为了配合CMS，诞生了PN，CMS是1.4版本后期引入，CMS是里程碑式的GC，它开启了并发回收的过程，但是CMS毛病较多，因此目前任何一个JDK版本默认是CMS
       并发垃圾回收是因为无法忍受STW
 
    2. Serial 年轻代 串行回收
 
-      ![image-20200523102439306](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Serial GC.png)
+      ![image-20200523102439306](.\Image\Serial GC.png)
 
    3. PS 年轻代 并行回收
 
-      ![image-20200523102918537](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Parallel Scavenge.png)
+      ![image-20200523102918537](.\Image\Parallel Scavenge.png)
 
    4. ParNew 年轻代 配合CMS的并行回收
 
-      ![image-20200523104255684](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Parallel New.png)
+      ![image-20200523104255684](.\Image\Parallel New.png)
 
       
 
-      ![image-20200523104417602](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\parallel new VS parallel Scavenge.png)
+      ![image-20200523104417602](.\Image\parallel new VS parallel Scavenge.png)
 
    5. SerialOld 
 
-      ![image-20200523102814923](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\Serial old.png)
+      ![image-20200523102814923](.\Image\Serial old.png)
 
    6. ParallelOld
 
-      ![image-20200523104035244](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\parallel pld.png)
+      ![image-20200523104035244](.\Image\parallel pld.png)
 
    7. ConcurrentMarkSweep 老年代 并发的， 垃圾回收和应用程序同时运行，降低STW的时间(200ms)
       CMS问题比较多，所以现在没有一个版本默认是CMS，只能手工指定
@@ -955,9 +955,9 @@
       几十个G的内存，单线程回收 -> G1 + FGC 几十个G -> 上T内存的服务器 ZGC
       算法：**三色标记 + Incremental Update**
 
-      ![image-20200523105038344](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\CMS.png)
+      ![image-20200523105038344](.\Image\CMS.png)
 
-      ![image-20200523135008165](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\从线程角度看CMS的四个阶段.png)
+      ![image-20200523135008165](.\Image\从线程角度看CMS的四个阶段.png)
 
    8. G1(10ms)
       算法：**三色标记 + SATB**
@@ -985,7 +985,7 @@
 
    ### CMS
 
-   ![image-20200523140307451](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\CMS缺点.png)
+   ![image-20200523140307451](.\Image\CMS缺点.png)
 
    #### CMS的问题
 
@@ -1013,23 +1013,23 @@
 
    
 
-   ![image-20200523154810481](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\并发标记阶段的算法.png)
+   ![image-20200523154810481](.\Image\并发标记阶段的算法.png)
 
    
 
    # 第七节课
 
-   ![image-20200523165530225](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\第七节课的目标.png)
+   ![image-20200523165530225](.\Image\第七节课的目标.png)
 
    
 
-   ![image-20200523173120946](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\GC HeapDump.png)
+   ![image-20200523173120946](.\Image\GC HeapDump.png)
 
    
 
    # 重要概念
 
-   ![image-20200523174959652](H:\MsbSpace\Zero\Record-document\Java\JVM\Image\吞吐量与响应时间.png)
+   ![image-20200523174959652](.\Image\吞吐量与响应时间.png)
 
    
 
